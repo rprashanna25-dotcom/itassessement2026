@@ -1,0 +1,112 @@
+:root {
+    --min-width: 960px;
+    --max-width: 1320px;
+    --margin: auto;
+}
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0f0f0f;
+    color: #eeeeee;
+    line-height: 1.6;
+}
+
+.random { max-width: var(--max-width); min-width: var(--min-width); margin: var(--margin); }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav { display: flex; justify-content: space-between; align-items: center; }
+
+.logo { font-size: 2.2rem; font-weight: 700; color: #ff0000; letter-spacing: 3px; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: #ff0000; }
+
+a { color: #ffcc00; }
+a:visited { color: #cc9900; }
+a:hover { color: #ff0000; }
+
+section { margin: 4rem 0; }
+
+h1, h2 { color: #ff0000; }
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;           /* makes sure it stays on top */
+    background-color: #1a1a1a;
+    border-top: 4px solid #ff0000;
+    padding: 2rem 0 1.5rem;
+    max-width: var(--max-width);
+    margin: var(--margin);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-col h3 { color: #ff0000; margin-bottom: 1rem; }
+
+.secondary-nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+}
+
+.site-map { background: #222; padding: 1.5rem; border-radius: 8px; }
+
+.site-map ul {
+    list-style: none;
+    columns: 2;
+    gap: 2rem;
+}
+
+.site-map a { color: #ffcc00; display: block; margin-bottom: 8px; }
+
+@media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .nav-links { gap: 1rem; font-size: 0.95rem; }
+}

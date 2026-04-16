@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELUX Cars - Contact Us</title>
+    <link rel="stylesheet" href="/Static/contact.css">
+</head>
+<body>
+    <div class="random">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DELUX</div>
+                <ul class="nav-links">
+                    <li><a href="/Templates/index.html">Home</a></li>
+                    <li><a href="/Templates/about.html">About Us</a></li>
+                    <li><a href="/Templates/inventory.html">Inventory</a></li>
+                    <li><a href="/Templates/gallery.html">Gallery</a></li>
+                    <li><a href="/Templates/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 style="text-align: center; margin: 3rem 0;">Get In Touch</h1>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem;">Have questions? Want to book a test drive? Fill out the form below. Our team will reply within 24 hours.</p>
+        
+        <!-- Contact Form with JavaScript validation -->
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" rows="6" required></textarea>
+            </div>
+            
+            <button type="submit">Send Message</button>
+            <div id="formMessage"></div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>DELUX Cars</h3>
+                    <p>Premium Car Dealership<br>Bhadrapur, Koshi Province, Nepal</p>
+                    <p>Phone: <a href="tel:+9779801234567">+977 980-1234567</a></p>
+                    <p>Email: <a href="mailto:info@deluxcars.com.np">info@deluxcars.com.np</a></p>
+                </div>
+                <div class="footer-col site-map">
+                    <h3>Site Map</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us </a></li>
+                        <li><a href="inventory.html">Inventory </a></li>
+                        <li><a href="gallery.html">Gallery </a></li>
+                        <li><a href="contact.html">Contact </a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>External Links</h3>
+                    <p><a href="https://www.toyota.com" target="_blank">Toyota Global</a></p>
+                    <p><a href="https://www.bmw.com" target="_blank">BMW International</a></p>
+                    <p><a href="https://www.mercedes-benz.com" target="_blank">Mercedes-Benz</a></p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; opacity: 0.7; font-size: 0.9rem;">
+                &copy; 2026 DELUX Cars. All Rights Reserved. | Address: Bhadrapur, Koshi, Nepal
+            </p>
+        </div>
+    </footer>
+<script src="/Static/contact.js"></script>
+</div>
+</body>
+</html>

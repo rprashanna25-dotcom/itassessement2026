@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELUX Cars - Home</title>
+<link rel="stylesheet" href="/Static/index.css">
+</head>
+<body>
+    <div class="random">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DELUX</div>
+                <ul class="nav-links">
+                    <li><a href="/Templates/index.html">Home</a></li>
+                    <li><a href="/Templates/about.html">About Us</a></li>
+                    <li><a href="/Templates/inventory.html">Inventory</a></li>
+                    <li><a href="/Templates/gallery.html">Gallery</a></li>
+                    <li><a href="/Templates/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">         
+        <!--  homepage banner -->
+        <div class="slider" id="slider">
+            <img src="photos/Luxury-black-sedan.jpg" alt="Luxury black sedan" class="slide active">
+            <img src="photos/red-sports-car.jpg" alt="Red sports car" class="slide active">
+            <img src="photos/silver-suv-in-city-lights.jpg" alt="Silver SUV in city lights" class="slide active">
+            <img src="photos/blue-luxury-coupe.jpg" alt="Blue luxury coupe at sunset" class="slide active">
+            <!--To slide the image in home page-->
+            <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+            
+            <div class="slide-text">
+                <h1>Welcome to DELUX Cars</h1>
+                <p>Luxury. Performance. Trust.<br>Premium cars, unbeatable service.</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>Why Choose DELUX?</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem;">We are Nepal's trusted premium car dealership offering new and certified pre-owned vehicles with world-class service. Every car comes with a 3-year warranty and free 1-year road assistance.</p>
+            
+            <div class="featured">
+                <div class="card">
+                    <img src="photos/Certified Pre-Owned.png" alt="Featured new arrivals">
+                    <div class="card-content">
+                        <h3>Certified Pre-Owned</h3>
+                        <p>Rigorously inspected luxury vehicles with full service history.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photos/new-arrival.jpg" alt="Featured red sports car - DELUX Cars">
+                    <div class="card-content">
+                        <h3>New Arrivals</h3>
+                        <p>Latest 2025-2026 models from leading global brands.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="photos/easy financing.jpg" alt="easy Financing - DELUX Cars">
+                    <div class="card-content">
+                        <h3>Easy Financing</h3>
+                        <p>Low-interest plans starting at 8.5% with quick approval.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!--To Show all in footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>DELUX Cars</h3>
+                    <p>Premium Car Dealership<br>Bhadrapur, Koshi, Nepal </p>
+                    <p>Phone: <a href="tel:+9779801234567">+977 980-1234567</a></p>
+                    <p>Email: <a href="mailto:info@deluxcars.com.np">info@deluxcars.com.np</a></p>
+                </div>
+                <!-- Site Map (shows all HTML pages) -->
+                <div class="footer-col site-map">
+                    <h3>Site Map</h3>
+                    <ul>
+                        <li><a href="index.html">Home </a></li>
+                        <li><a href="about.html">About Us </a></li>
+                        <li><a href="inventory.html">Inventory </a></li>
+                        <li><a href="gallery.html">Gallery </a></li>
+                        <li><a href="contact.html">Contact </a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>External Links</h3>
+                    <p>Visit our partners:</p>
+                    <p><a href="https://www.toyota.com" target="_blank">Toyota Global</a></p>
+                    <p><a href="https://www.bmw.com" target="_blank">BMW International</a> </p>
+                    <p><a href="https://www.mercedes-benz.com" target="_blank">Mercedes-Benz</a> </p>
+                </div>
+            </div>
+            <!--For copyright footer-->
+            <p style="text-align: center; margin-top: 2rem; opacity: 0.7; font-size: 0.9rem;">
+                &copy; 2026 DELUX Cars. All Rights Reserved. | Address: Bhadrapur, Koshi, Nepal
+            </p>
+        </div>
+    </footer>
+<script src="/Static/index.js"></script>
+</div>
+</body>
+</html>
